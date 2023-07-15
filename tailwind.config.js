@@ -2,7 +2,14 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      textUnderlineOffset: {
+        32: '32px',
+      },
+      screen: {
+        xs: '808px',
+      }
+    },
   },
   plugins: [],
 }

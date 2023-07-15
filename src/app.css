@@ -5,6 +5,6 @@
 
 @layer base {
     body {
-        @apply bg-slate-950;
+        @apply bg-gradient-to-t from-black to-slate-950 h-screen;
     }
 }
