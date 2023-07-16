@@ -8,6 +8,8 @@
 @layer base {
     body {
         @apply bg-gradient-to-t from-black to-slate-950 min-h-screen;
+        @apply select-none;
+        @apply scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-slate-950;
         font-family: 'Rajdhani', sans-serif;
     }
 }
