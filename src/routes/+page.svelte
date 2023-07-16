@@ -1,6 +1,6 @@
 <script>
     import Icon from "$lib/assets/chasse.png";
-    import { BootstrapBrand, SassBrand, WindSolid } from 'svelte-awesome-icons';
+    import { BootstrapBrand, SassBrand, WindSolid, GithubBrand } from 'svelte-awesome-icons';
 
     let clicked = false;
 </script>
@@ -14,7 +14,7 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </head>
 
-    <body>
+    <body class="select-none">
         <header>
             <nav class="flex items-center justify-between w-[92%] mx-auto">
                 <div>
@@ -24,6 +24,7 @@
                     <ul class="flex md:flex-row flex-col md:items-end text-teal-600 gap-16 text-xl">
                         <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Learn</a></li>
                         <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Conventions</a></li>
+                        <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Framework Guides</a></li>
                         <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Get Involved</a></li>
                     </ul>
                 </div>
@@ -40,13 +41,13 @@
                 <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">The Simplicity of HTML.</p>
                 <p class="bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Without the Boilerplate.</p>
             </div>
-            <div id="hero-subheader" class="text-teal-600 flex flex-col justify-center items-center text-xl pt-8 pr-4">
+            <div id="hero-subheader" class="text-teal-600 flex flex-col justify-center items-center text-lg pt-8 pr-4">
                 <p>Define your components in HTML. Reuse them wherever you want to.</p>
                 <p>Build static websites the classic way - no frameworks, no learning curves.</p>
-                <p>Write and ship sites like a pro.</p>
+                <p>Write and ship sites like a pro - all in a simple command.</p>
             </div>
             <div id="hero-call-to-action" class="flex flex-col justify-center items-center text-xl pt-8 pr-4">
-                <button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-full hover:bg-teal-500 shadow-md hover:shadow-teal-600">Get Started</button>
+                <button class="bg-gradient-to-r from-emerald-600 to-teal-900 hover:from-teal-900 hover:to-emerald-600 transition duration-500 text-slate-950 px-5 py-2 rounded-full">Get Started</button>
             </div>
             <div id="hero-conclusion" class="text-gray-500 flex flex-col justify-center items-center text-md pt-16 pr-4">
                 <p>Works seamlessly with your favourite IDE, frameworks and utilities...</p>
@@ -57,6 +58,38 @@
                     <WindSolid class="text-gray-500 h-8 w-8" />
                 </span>
             </div>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+            <div class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-8">
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Static Websites?</b>
+                    <p class="w-64 pt-4">Many static websites can be shipped efficiently without the use of package managers or static site generators with their own jargon. Run a simple command and be good to go.</p>
+                </div>
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">HTML-Only</b>
+                    <p class="w-64 pt-4">Chasse puts a slight spin to the good old HTML syntax by introducing components, which is all handled by the parser. So no plugins or IDE extensions needed.</p>
+                </div>
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Similar Use to Sass</b>
+                    <p class="w-64 pt-4">Usage of Chasse (hear the rhyme?) derives from Sass, just to keep things similar. Define a parent file, run a command and convert to browser-usable HTML files. That's all!</p>
+                </div>
+            </div>
+            <div class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-16">
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Not Another Tool to Learn</b>
+                    <p class="w-64 pt-4">Learning new things is frustrating when all you want is to quickly get the job done. This is not a framework or library to wrap your head around, but a CLI parser to ease things.</p>
+                </div>
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Inspired from the Greats</b>
+                    <p class="w-64 pt-4">Chasse is inspired from React components, Django template inheritance and Sass mixins. Use components like React & borrowing into files like Django templates.</p>
+                </div>
+                <div>
+                    <b class="text-2xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">CSS Frameworks</b>
+                    <p class="w-64 pt-4">Chasse integrates well with most of the CSS frameworks out there that utilize classes within HTML for styling. For custom CSS, it is handled the usual way, or with Sass or Less.</p>
+                </div>
+            </div>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
         </main>
     </body>
 </html>

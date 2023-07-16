@@ -4,9 +4,13 @@
 @tailwind utilities;
 
 
+/* Tailwind CSS */
 @layer base {
     body {
-        @apply bg-gradient-to-t from-black to-slate-950 h-screen;
+        @apply bg-gradient-to-t from-black to-slate-950 min-h-screen;
         font-family: 'Rajdhani', sans-serif;
     }
 }
+
+
+/* Custom CSS */
