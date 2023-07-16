@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,5 +7,6 @@
 @layer base {
     body {
         @apply bg-gradient-to-t from-black to-slate-950 h-screen;
+        font-family: 'Rajdhani', sans-serif;
     }
 }
