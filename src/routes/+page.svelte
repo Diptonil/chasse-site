@@ -1,41 +1,50 @@
 <script>
-    import Icon from "$lib/assets/chasse.png";
-    import { BootstrapBrand, SassBrand, WindSolid, GithubBrand, BarsSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand } from 'svelte-awesome-icons';
+    import { BootstrapBrand, SassBrand, WindSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand } from 'svelte-awesome-icons';
+    import { CodeBlock } from '@skeletonlabs/skeleton';
+
+    import Head from '../components/Head.svelte';
+    import Navbar from '../components/Navbar.svelte';
+    import Footer from '../components/Footer.svelte';
+
+    let codeParentFile = 
+    `<Navbar!!>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            ...
+        </ul>
+    </nav>
+</Navbar!!>
+
+<Footer!!>
+    <footer>
+        All rights reserved.
+    </footer>
+</Footer!!> />`
+    let codeChildFile =
+    `<template!!>
+
+<!DOCTYPE HTML5>
+<html>
+    ...
+    <Navbar!! />
+    ...
+    <UniversalFooter!! />
+</html>`
+    let codeCommand = `chasse child.chasse.html src`
 </script>
 
 
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chasse: Simplifying HTML Boilerplates</title>
-    </head>
+    <Head />
 
     <body>
-        <header>
-            <nav class="flex items-center justify-between w-[92%] mx-auto">
-                <div>
-                    <img class="w-48" src={ Icon } alt="Chasse logo." />
-                </div>
-                <div class="absolute top-[-100%] w-full flex md:static md:min-h-fit md:w-auto ">
-                    <ul class="flex md:flex-row flex-col md:items-end text-teal-600 gap-16 text-xl">
-                        <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">About</a></li>
-                        <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Documentation</a></li>
-                        <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Conventions</a></li>
-                        <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Get Involved</a></li>
-                    </ul>
-                </div>
-                <div class="flex items-center gap-6">
-                    <a href="https://github.com/Diptonil/chasse"><GithubBrand class="text-gray-500 h-10 w-10" /></a>
-                    <button class="bg-slate-950 text-teal-600 px-5 py-2 rounded-full border-2 border-teal-600 hover:text-teal-500 hover:border-teal-500 shadow-sm hover:shadow-teal-600">Install</button>
-                    <button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-full hover:bg-teal-500 shadow-sm hover:shadow-teal-600">Get Started</button>
-                    <BarsSolid class="text-teal-600 text-4xl cursor-pointer md:hidden" name="menu-outline" />
-                </div>
-            </nav>
-        </header>
+        <Navbar />
 
-        <main>
+        <main class="pb-32">
             <div id="hero-header" class="flex flex-col justify-center items-center text-6xl pt-8 pr-4">
-                <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">The Simplicity of HTML.</p>
+                <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent antialiased">The Simplicity of HTML.</p>
                 <p class="bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Without the Boilerplate.</p>
             </div>
             <div id="hero-subheader" class="text-teal-600 flex flex-col justify-center items-center text-lg pt-8 pr-4">
@@ -44,7 +53,7 @@
                 <p>Write and ship sites like a pro - all in a simple command.</p>
             </div>
             <div id="hero-call-to-action" class="flex flex-col justify-center items-center text-xl pt-8 pr-4">
-                <button class="transition duration-500 bg-gradient-to-r shadow-sm from-emerald-600 to-teal-900 hover:from-teal-900 hover:to-emerald-600 hover:shadow-teal-600 text-slate-950 px-5 py-2 rounded-full">Get Started</button>
+                <button class="bg-gradient-to-r shadow-sm from-emerald-600 to-teal-900 hover:from-teal-900 hover:to-emerald-600 hover:shadow-teal-600 text-slate-950 px-5 py-2 rounded-full">Get Started</button>
             </div>
             <div id="hero-conclusion" class="text-gray-500 flex flex-col justify-center items-center text-md pt-16 pr-4">
                 <p>Works seamlessly with your favourite IDE, frameworks and utilities...</p>
@@ -107,13 +116,34 @@
             </div>
             <hr class="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700">
 
-            <div id="about" class="text-teal-600 text-lg w-[92%] mx-auto ">
-                <b class="text-teal-500 text-xl">Chasse</b> is a CLI command 
+            <div id="get-started" class="w-[92%] text-teal-600 mx-auto">
+                <p class="text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Quickly Get Started</p>
+                <ol class="list-disc text-xl w-[90%] mx-auto pt-4 space-y-2">
+                    <li><a href="www" class="text-teal-500 underline">Install</a> the Chasse binary on your system. The installation section shall walk you through the whole process.</li>
+                    <li>
+                        Create a <i>parent Chasse file</i>, named as <code class="text-base">template.chasse.html</code>:
+                        <div class="justify-center hover:select-text w-[80%] pt-4">
+                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeParentFile }"></CodeBlock>
+                        </div>
+                    </li>
+                    <li>
+                        Create a <i>child Chasse file</i>, named as <code class="text-base">child.chasse.html</code> (declare the parent files to import from, then use the components in the file):
+                        <div class="justify-center hover:select-text w-[80%] pt-4">
+                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeChildFile }"></CodeBlock>
+                        </div>
+                    </li>
+                    <li>
+                        The first argument is the file that needs to be converted. The second argument is the <i>relative path</i> to the folder where the generated HTML files are to be kept. Run this commmand, and you will get all your HTML files in one place:
+                        <div class="justify-center hover:select-text w-[80%] pt-4">
+                            <CodeBlock language="Shell" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeCommand }"></CodeBlock>
+                        </div>
+                    </li>
+                    <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code class="text-base">.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
+                    <li>There are much more customizations, features, recommendations and development magic available in the <a href="www" class="text-teal-500 underline">documentations</a>. Check it out first!</li>
+                </ol> 
             </div>
         </main>
-        <footer class="flex flex-col justify-center items-center py-4 bg-black text-gray-500">
-            <p>Released under the <b>MIT License</b>.</p>
-            <p>Copyright © Diptonil Roy.</p>
-        </footer>
+
+        <Footer />
     </body>
 </html>
