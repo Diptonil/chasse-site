@@ -1,5 +1,5 @@
 <script>
-    import { BootstrapBrand, SassBrand, WindSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand } from 'svelte-awesome-icons';
+    import { BootstrapBrand, SassBrand, WindSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand, LessBrand } from 'svelte-awesome-icons';
     import { CodeBlock } from '@skeletonlabs/skeleton';
     import { codeCommand, codeChildFile, codeParentFile } from '$lib/stores.js'
 
@@ -35,6 +35,7 @@
                     <BootstrapBrand class="text-gray-500 h-8 w-8" />
                     <SassBrand class="text-gray-500 h-8 w-8" />
                     <WindSolid class="text-gray-500 h-8 w-8" />
+                    <LessBrand class="text-gray-500 h-8 w-8" />
                 </span>
             </div>
             <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">

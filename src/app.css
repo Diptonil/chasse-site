@@ -12,6 +12,15 @@
         @apply scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-slate-950;
         font-family: 'Rajdhani', sans-serif;
     }
+    code {
+        @apply text-base;
+    }
+    main {
+        @apply pb-32;
+    }
+    hr {
+        @apply h-px my-16 bg-gray-200 border-0 dark:bg-gray-700;
+    }
 }
 
 

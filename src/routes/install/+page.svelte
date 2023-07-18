@@ -10,7 +10,7 @@
 
 
 <html lang="en">
-    <Head />
+    <Head page="Install | " />
 
     <body>
         <Navbar getStarted="/#get-started" />
@@ -51,7 +51,6 @@
                     </div>
                     <li>All is done if the corresponding software version is displayed. You can now start using the command!!</li>
                 </ul>
-
             </div>
         </main>
 

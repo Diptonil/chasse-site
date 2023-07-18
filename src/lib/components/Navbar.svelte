@@ -13,8 +13,8 @@
         </div>
         <div class="absolute top-[-100%] w-full flex md:static md:min-h-fit md:w-auto ">
             <ul class="flex md:flex-row flex-col md:items-end text-teal-600 gap-16 text-xl">
-                <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Documentations</a></li>
-                <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="www">Conventions</a></li>
+                <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="/documentation">Documentations</a></li>
+                <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="/conventions">Conventions</a></li>
                 <li class="hover:underline underline-offset-32 decoration-2 hover:text-teal-500"><a href="/get-involved">Get Involved</a></li>
             </ul>
         </div>
