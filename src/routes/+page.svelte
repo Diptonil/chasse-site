@@ -1,38 +1,11 @@
 <script>
     import { BootstrapBrand, SassBrand, WindSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand } from 'svelte-awesome-icons';
     import { CodeBlock } from '@skeletonlabs/skeleton';
+    import { codeCommand, codeChildFile, codeParentFile } from '../lib/stores.js'
 
-    import Head from '../components/Head.svelte';
-    import Navbar from '../components/Navbar.svelte';
-    import Footer from '../components/Footer.svelte';
-
-    let codeParentFile = 
-    `<Navbar!!>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Contact</li>
-            ...
-        </ul>
-    </nav>
-</Navbar!!>
-
-<Footer!!>
-    <footer>
-        All rights reserved.
-    </footer>
-</Footer!!> />`
-    let codeChildFile =
-    `<template!!>
-
-<!DOCTYPE HTML5>
-<html>
-    ...
-    <Navbar!! />
-    ...
-    <UniversalFooter!! />
-</html>`
-    let codeCommand = `chasse child.chasse.html src`
+    import Head from '../lib/components/Head.svelte';
+    import Navbar from '../lib/components/Navbar.svelte';
+    import Footer from '../lib/components/Footer.svelte';
 </script>
 
 
@@ -118,24 +91,24 @@
 
             <div id="get-started" class="w-[92%] text-teal-600 mx-auto">
                 <p class="text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Quickly Get Started</p>
-                <ol class="list-disc text-xl w-[90%] mx-auto pt-4 space-y-2">
+                <ol class="list-disc text-xl w-[90%] mx-auto pt-4 space-y-4">
                     <li><a href="www" class="text-teal-500 underline">Install</a> the Chasse binary on your system. The installation section shall walk you through the whole process.</li>
                     <li>
                         Create a <i>parent Chasse file</i>, named as <code class="text-base">template.chasse.html</code>:
                         <div class="justify-center hover:select-text w-[80%] pt-4">
-                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeParentFile }"></CodeBlock>
+                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeParentFile }"></CodeBlock>
                         </div>
                     </li>
                     <li>
                         Create a <i>child Chasse file</i>, named as <code class="text-base">child.chasse.html</code> (declare the parent files to import from, then use the components in the file):
                         <div class="justify-center hover:select-text w-[80%] pt-4">
-                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeChildFile }"></CodeBlock>
+                            <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeChildFile }"></CodeBlock>
                         </div>
                     </li>
                     <li>
                         The first argument is the file that needs to be converted. The second argument is the <i>relative path</i> to the folder where the generated HTML files are to be kept. Run this commmand, and you will get all your HTML files in one place:
                         <div class="justify-center hover:select-text w-[80%] pt-4">
-                            <CodeBlock language="Shell" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ codeCommand }"></CodeBlock>
+                            <CodeBlock language="Shell" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeCommand }"></CodeBlock>
                         </div>
                     </li>
                     <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code class="text-base">.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
