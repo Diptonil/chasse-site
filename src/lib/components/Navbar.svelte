@@ -9,7 +9,7 @@
 <header>
     <nav class="flex items-center justify-between w-[92%] mx-auto">
         <div>
-            <img class="w-48" src={ Icon } alt="Chasse logo." />
+            <a href="/"><img class="w-48" src={ Icon } alt="Chasse logo." /></a>
         </div>
         <div class="absolute top-[-100%] w-full flex md:static md:min-h-fit md:w-auto ">
             <ul class="flex md:flex-row flex-col md:items-end text-teal-600 gap-16 text-xl">
