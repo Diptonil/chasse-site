@@ -1,11 +1,11 @@
 <script>
     import { BootstrapBrand, SassBrand, WindSolid, CodeSolid, Html5Brand, ScrewdriverWrenchSolid, StarSolid, Css3Brand } from 'svelte-awesome-icons';
     import { CodeBlock } from '@skeletonlabs/skeleton';
-    import { codeCommand, codeChildFile, codeParentFile } from '../lib/stores.js'
+    import { codeCommand, codeChildFile, codeParentFile } from '$lib/stores.js'
 
-    import Head from '../lib/components/Head.svelte';
-    import Navbar from '../lib/components/Navbar.svelte';
-    import Footer from '../lib/components/Footer.svelte';
+    import Head from '$lib/components/Head.svelte';
+    import Navbar from '$lib/components/Navbar.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 </script>
 
 
@@ -26,7 +26,7 @@
                 <p>Write and ship sites like a pro - all in a simple command.</p>
             </div>
             <div id="hero-call-to-action" class="flex flex-col justify-center items-center text-xl pt-8 pr-4">
-                <button class="bg-gradient-to-r shadow-sm from-emerald-600 to-teal-900 hover:from-teal-900 hover:to-emerald-600 hover:shadow-teal-600 text-slate-950 px-5 py-2 rounded-full">Get Started</button>
+                <a href="#get-started"><button class="bg-gradient-to-r shadow-sm from-emerald-600 to-teal-900 hover:from-teal-900 hover:to-emerald-600 hover:shadow-teal-600 text-slate-950 px-5 py-2 rounded-full">Get Started</button></a>
             </div>
             <div id="hero-conclusion" class="text-gray-500 flex flex-col justify-center items-center text-md pt-16 pr-4">
                 <p>Works seamlessly with your favourite IDE, frameworks and utilities...</p>

@@ -20,7 +20,7 @@
         </div>
         <div class="flex items-center gap-6">
             <a href="https://github.com/Diptonil/chasse"><GithubBrand class="text-gray-500 h-10 w-10" /></a>
-            <button class="bg-slate-950 text-teal-600 px-5 py-2 rounded-full border-2 border-teal-600 hover:text-teal-500 hover:border-teal-500 shadow-sm hover:shadow-teal-600">Install</button>
+            <a href="/install"><button class="bg-slate-950 text-teal-600 px-5 py-2 rounded-full border-2 border-teal-600 hover:text-teal-500 hover:border-teal-500 shadow-sm hover:shadow-teal-600">Install</button></a>
             <a href="{ getStarted }"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-full hover:bg-teal-500 shadow-sm hover:shadow-teal-600">Get Started</button></a>
             <BarsSolid class="text-teal-600 text-4xl cursor-pointer md:hidden" name="menu-outline" />
         </div>
