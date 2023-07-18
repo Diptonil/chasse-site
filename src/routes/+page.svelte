@@ -15,7 +15,7 @@
     <body>
         <Navbar />
 
-        <main class="pb-32">
+        <main>
             <div id="hero-header" class="flex flex-col justify-center items-center text-6xl pt-8 pr-4">
                 <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">The Simplicity of HTML.</p>
                 <p class="bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Without the Boilerplate.</p>
@@ -38,9 +38,9 @@
                     <LessBrand class="text-gray-500 h-8 w-8" />
                 </span>
             </div>
-            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+            <hr />
 
-            <div class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-8">
+            <div id="features-1" class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-8">
                 <div>
                     <CodeSolid class="pb-4 w-8 h-8" />
                     <b class="text-2xl bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Static Websites?</b>
@@ -57,7 +57,7 @@
                     <p class="w-64 pt-4">Usage of Chasse (hear the rhyme?) derives from Sass, just to keep things similar. Define a parent file, run a command and convert to browser-usable HTML files. That's all!!</p>
                 </div>
             </div>
-            <div class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-16">
+            <div id="features-2" class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-16">
                 <div>
                     <ScrewdriverWrenchSolid class="pb-4 w-8 h-8" />
                     <b class="text-2xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Not Another Tool to Learn</b>
@@ -74,7 +74,7 @@
                     <p class="w-64 pt-4">Chasse integrates well with most of the CSS frameworks out there that utilize classes within HTML for styling. For custom CSS, it is handled the usual way, or with Sass or Less.</p>
                 </div>
             </div>
-            <hr class="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700">
+            <hr />
 
             <div id="quote" class="flex flex-col justify-center items-center text-4xl pt-4 pr-4">
                 <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">"Moving away from the basic and boxing yourself</p>
@@ -88,20 +88,20 @@
                 <p>It's easy to choose a static site generator and spend hours at it. But often there is no one size-fits-all solution for everything.</p>
                 <p class="pt-4 text-emerald-500">Sometimes, all you need is HTML - with superpowers...</p>
             </div>
-            <hr class="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700">
+            <hr />
 
             <div id="get-started" class="w-[92%] text-teal-600 mx-auto">
                 <p class="text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Quickly Get Started</p>
-                <ol class="list-disc text-xl w-[90%] mx-auto pt-4 space-y-4">
+                <ul class="list-disc text-xl w-[90%] mx-auto pt-4 space-y-4">
                     <li><a href="/install" class="text-teal-500 underline">Install</a> the Chasse binary on your system. The installation section shall walk you through the whole process.</li>
                     <li>
-                        Create a <i>parent Chasse file</i>, named as <code class="text-base">template.chasse.html</code>:
+                        Create a <i>parent Chasse file</i>, named as <code>template.chasse.html</code>:
                         <div class="justify-center hover:select-text w-[80%] pt-4">
                             <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeParentFile }"></CodeBlock>
                         </div>
                     </li>
                     <li>
-                        Create a <i>child Chasse file</i>, named as <code class="text-base">child.chasse.html</code> (declare the parent files to import from, then use the components in the file):
+                        Create a <i>child Chasse file</i>, named as <code>child.chasse.html</code> (declare the parent files to import from, then use the components in the file):
                         <div class="justify-center hover:select-text w-[80%] pt-4">
                             <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeChildFile }"></CodeBlock>
                         </div>
@@ -112,9 +112,9 @@
                             <CodeBlock language="Shell" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeCommand }"></CodeBlock>
                         </div>
                     </li>
-                    <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code class="text-base">.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
+                    <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code>.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
                     <li>There are much more customizations, features, recommendations and development magic available in the <a href="www" class="text-teal-500 underline">documentations</a>. Check it out first!!</li>
-                </ol> 
+                </ul> 
             </div>
         </main>
 

@@ -11,7 +11,7 @@
     <body>
         <Navbar getStarted="/#get-started" />
 
-        <main class="pb-32">
+        <main>
             <div id="message" class="flex flex-col justify-center items-center text-4xl pt-8 pr-4 text-teal-600">
                 <p><b>Chasse</b> is an <b class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">open-source</b> endeavour to aid creative developers who choose to make</p>
                 <p>customizable static websites using HTML and no external frameworks.</p>

@@ -21,6 +21,9 @@
     hr {
         @apply h-px my-16 bg-gray-200 border-0 dark:bg-gray-700;
     }
+    ol {
+        @apply list-decimal w-[88%] mx-auto pt-4;
+    }
 }
 
 

@@ -15,7 +15,7 @@
     <body>
         <Navbar getStarted="/#get-started" />
 
-        <main class="pb-32">
+        <main>
             <div id="message" class="flex flex-col justify-center items-center text-2xl">
                 <p class="text-teal-600"><b class="text-emerald-600">Chasse</b> is an open-source CLI utility to facilitate using components in HTML.</p>
                 <p class="text-teal-600 text-lg">(Distributions for MacOS are currently unavailable, but we are working on releasing a build soon...!)</p>
@@ -32,7 +32,7 @@
                     <a href="/src/lib/binaries/linux/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Linux</button></a>
                 </div>
             </div>
-            <hr class="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700">
+            <hr />
 
             <div id="instructions" class="w-[92%] flex flex-col text-teal-600 mx-auto items-center justify-center">
                 <p class="text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Setting It Up</p>
