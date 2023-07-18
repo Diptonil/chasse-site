@@ -22,7 +22,7 @@
                 <p class="text-emerald-600 pt-8">Version: Ballet (v1.0.0 LTS)</p>
                 <p class="text-base text-teal-600">View <a class="underline underline-offset-4 text-teal-500" href="https://github.com/Diptonil/chasse/blob/main/CHANGELOG.md">changelog</a>.</p>
             </div>
-            <div id="downloads" class=" text-teal-600 flex items-center justify-center gap-64 w-[92%] mx-auto pt-16">
+            <div id="downloads" class=" text-teal-600 flex items-center justify-center gap-96 w-[92%] mx-auto pt-16">
                 <div>
                     <WindowsBrand class="pb-4 pl-4 w-32 h-32" />
                     <a href="/src/lib/binaries/linux/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Windows</button></a>
