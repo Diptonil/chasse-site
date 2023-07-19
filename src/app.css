@@ -24,6 +24,25 @@
     ol {
         @apply list-decimal w-[88%] mx-auto pt-4;
     }
+
+    .isOnTerminology {
+        @apply border-2 border-teal-600;
+    }
+    .isOnBasicUses {
+        @apply border-2 border-teal-600;
+    }
+    .isOnOptionals{
+        @apply border-2 border-teal-600;
+    }
+    .isOnIssues {
+        @apply border-2 border-teal-600;
+    }
+    .isOnIntegrations {
+        @apply border-2 border-teal-600;
+    }
+    .isOnCons{
+        @apply border-2 border-teal-600;
+    }
 }
 
 
