@@ -18,6 +18,7 @@
 
         <main>
             <DocsSidebar section="#issues" />
+            
             <div id="docs" class="p-4 ml-96">
                 <div class="text-teal-600 text-xl">
                     <b class="font-medium text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Issues and Bugs</b>

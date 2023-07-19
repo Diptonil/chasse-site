@@ -64,13 +64,13 @@
                         <li>There are two positionals - the <i>child Chasse file </i>and the <i>path where the resultant HTML files get generated</i>.</li>
                         <li>It is assumed that the parents are in the same directory as the child Chasse file. However, this is conventionally <br /> not a good practice. We can specify paths where the parents live (check below for the <code>-p</code> option).</li>
                         <li>
-                            Assuming that we are to generate the files in the <i>same</i> directory, we use the command as:
+                            Assuming that we are to generate the file in the <i>same</i> directory, we use the command as:
                             <div class="justify-center hover:select-text w-[80%] pt-4 text-base">
                                 <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-xs" rounded="rounded-xl" code="{ $codeDocsCommand }"></CodeBlock>
                             </div>
                         </li>
                         <li>
-                            If we are at generate the files <i>in some other folder</i>, we use the command as:
+                            If we are at generate the file <i>in some other folder</i>, we use the command as:
                             <div class="justify-center hover:select-text w-[80%] pt-4 text-base">
                                 <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-xs" rounded="rounded-xl" code="{ $codeDocsCommandOutputPath }"></CodeBlock>
                             </div>
@@ -93,7 +93,7 @@
                                 <CodeBlock language="HTML" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-xs" rounded="rounded-xl" code="{ $codeDocsResult }"></CodeBlock>
                             </div>
                         </li>
-                        <li>We see a small bug - the resultant files also carry the parent declarations. This bug shall not be a part of the <br /> application from release 1.0.1. This leads us to the <a href="/documentation/issues" class="underline underline-offset-2 text-teal-500">next</a> section - a list of unresolved isses and bugs.</li>
+                        <li>We see a small bug - the resultant files also carry the parent declarations. This bug shall not be a part of the <br /> application from release 1.1.0. This leads us to the <a href="/documentation/issues" class="underline underline-offset-2 text-teal-500">next</a> section - a list of unresolved isses and bugs.</li>
                     </ul>
                 </div>
             </div>

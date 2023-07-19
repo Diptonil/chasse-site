@@ -99,6 +99,7 @@ const textParent = `<PlotlessBallets!!>
 
 const balletChild = `<text!!>
 <general!!>
+
 <!DOCTYPE html>
 <html lang="en">
     <Head!! />
@@ -119,6 +120,7 @@ const balletChild = `<text!!>
 
 const docsResult = `<text!!>
 <general!!>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

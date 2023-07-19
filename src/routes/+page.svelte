@@ -55,7 +55,7 @@
                 <div>
                     <SassBrand class="pb-4 w-8 h-8" />
                     <b class="text-2xl bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Similar Use to Sass</b>
-                    <p class="w-64 pt-4">Usage of Chasse (hear the rhyme?) derives from Sass, just to keep things similar. Define a parent file, run a command and convert to browser-usable HTML files. That's all!!</p>
+                    <p class="w-64 pt-4">Usage of Chasse is derived from Sass, just to keep things similar. Define a parent file, run a command and convert to browser-usable HTML files. That's all!!</p>
                 </div>
             </div>
             <div id="features-2" class="text-teal-600 flex items-center justify-between w-[92%] mx-auto pt-16">
@@ -113,7 +113,7 @@
                             <CodeBlock language="Shell" background="bg-zinc-950 pl-8 py-5" color="text-gray-300" buttonCopied="Copied!!" button="px-5 py-8 text-teal-600 rounded-full" text="text-sm" rounded="rounded-xl" code="{ $codeCommand }"></CodeBlock>
                         </div>
                     </li>
-                    <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code>.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
+                    <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all these rules (the <code>.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
                     <li>There are much more customizations, features, recommendations and development magic available in the <a href="/documentation" class="text-teal-500 underline">documentation</a>. Check it out first!!</li>
                 </ul> 
             </div>
