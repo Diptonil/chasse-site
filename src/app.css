@@ -30,9 +30,6 @@
     .isOnBasicUses {
         @apply border-2 border-teal-600;
     }
-    .isOnOptionals {
-        @apply border-2 border-teal-600;
-    }
     .isOnIssues {
         @apply border-2 border-teal-600;
     }

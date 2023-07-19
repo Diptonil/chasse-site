@@ -11,11 +11,13 @@
     <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </span>
 
+
 ## Table of Contents
 
 -   [Description](#description)
 -   [Frameworks and Tools](#frameworks-and-tools)
 -   [Roadmap](#roadmap)
+
 
 ## Description
 
@@ -29,6 +31,7 @@ This repository is the official site of Chasse - a parser CLI utility that allow
 
 <p align="right">(<a href="#top">Top</a>)</p>
 
+
 ## Frameworks and Tools
 
 The services used are:
@@ -40,6 +43,7 @@ The services used are:
 -   **Vercel**: Edge deployment.
 
 <p align="right">(<a href="#top">Top</a>)</p>
+
 
 ## Roadmap
 

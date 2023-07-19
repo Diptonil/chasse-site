@@ -1,10 +1,9 @@
 <script>
-    import { CircleInfoSolid, PenToSquareSolid, QuestionSolid, HandHoldingHandSolid, BugSolid, ExclamationSolid } from 'svelte-awesome-icons';
+    import { CircleInfoSolid, PenToSquareSolid, HandHoldingHandSolid, BugSolid, ExclamationSolid } from 'svelte-awesome-icons';
 
-    export const section = '#terminology';
+    export let section = '#terminology';
     let isOnTerminology = false;
     let isOnBasicUses = false;
-    let isOnOptionals = false;
     let isOnIssues = false;
     let isOnIntegrations= false;
     let isOnCons = false;
@@ -13,8 +12,6 @@
         isOnTerminology = true;
     } else if (section == '#basic-uses') {
         isOnBasicUses = true;
-    } else if (section == '#optionals') {
-        isOnOptionals= true;
     } else if (section == '#issues') {
         isOnIssues = true;
     } else if (section == '#integrations') {
@@ -42,33 +39,27 @@
         </a>
         </li>
         <li>
-            <a id="basic-uses" class:isOnBasicUses href="/basic-uses" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a id="basic-uses" class:isOnBasicUses href="/documentation/basic-uses" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <PenToSquareSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-            <span class="ml-3">Basic Uses</span>
+            <span class="ml-3">Usage</span>
             </a>
         </li>
         <li>
-            <a id="optionals" class:isOnOptionals href="/optionals" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-            <QuestionSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-            <span class="flex-1 ml-3 whitespace-nowrap">Optional Parameters</span>
-            </a>
-        </li>
-        <li>
-            <a id="issues" class:isOnIssues href="/issues" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a id="issues" class:isOnIssues href="/documentation/issues" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <BugSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
             <span class="flex-1 ml-3 whitespace-nowrap">Issues & Bugs</span>
-            <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-semibold text-slate-950 bg-teal-800 rounded-full">2</span>
+            <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-semibold text-slate-950 bg-teal-800 rounded-full">7</span>
             </a>
         </li>
         <li>
-            <a id="integrations" class:isOnIntegrations href="/integrations" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a id="integrations" class:isOnIntegrations href="/documentation/integrations" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <HandHoldingHandSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
             <span class="flex-1 ml-3 whitespace-nowrap">Integrations</span>
             </a>
         </li>
     <ul class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
         <li>
-            <a id="cons" class:isOnCons href="/cons" class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+            <a id="cons" class:isOnCons href="/documentation/cons" class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
             <ExclamationSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
             <span class="ml-4">Cons</span>
             </a>
