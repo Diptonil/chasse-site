@@ -114,7 +114,7 @@
                         </div>
                     </li>
                     <li>Glance through the code again to notice the use of exclamation points while declaring and using components. It is <b>mandatory</b> to follow all conventions (the <code>.chasse.html</code> extension, spaces between words and exclamations (and trailing slashes), capitalized component names), et cetera.</li>
-                    <li>There are much more customizations, features, recommendations and development magic available in the <a href="www" class="text-teal-500 underline">documentations</a>. Check it out first!!</li>
+                    <li>There are much more customizations, features, recommendations and development magic available in the <a href="/documentation" class="text-teal-500 underline">documentation</a>. Check it out first!!</li>
                 </ul> 
             </div>
         </main>

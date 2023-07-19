@@ -1,6 +1,6 @@
 <script>
     import { CodeBlock } from '@skeletonlabs/skeleton';
-    import { codeGeneralParent, codeTextParent, codeBalletChild, codeDocsCommand, codeDocsCommandParentFlag, codeDocsCommandVerboseFlag, codeDocsCommandOutputPath, codeDocsResult} from '$lib/stores.js' 
+    import { codeGeneralParent, codeTextParent, codeBalletChild, codeDocsCommand, codeDocsCommandParentFlag, codeDocsCommandVerboseFlag, codeDocsCommandOutputPath, codeDocsResult} from '$lib/stores.js';
 
     import Head from '$lib/components/Head.svelte';
     import Navbar from '$lib/components/Navbar.svelte';
