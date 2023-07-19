@@ -1,10 +1,8 @@
 import { readable } from 'svelte/store';
 
-
 const command = `chasse child.chasse.html src`;
 
-const parentFile = 
-`<Navbar!!>
+const parentFile = `<Navbar!!>
     <nav>
         <ul>
             <li>About</li>
@@ -18,10 +16,9 @@ const parentFile =
     <footer>
         All rights reserved.
     </footer>
-</Footer!!> />`
+</Footer!!> />`;
 
-const childFile  =
-`<template!!>
+const childFile = `<template!!>
 
 <!DOCTYPE HTML5>
 <html>
@@ -29,14 +26,13 @@ const childFile  =
     <Navbar!! />
     ...
     <UniversalFooter!! />
-</html>`
+</html>`;
 
 const windowsPathCommand = `pathman /au c:path\\to\\directory`;
 
 const linuxPathCommand = `sudo echo "export PATH=$PATH:/path/to/dir" >> /etc/profile`;
 
 const installationCheck = `chasse -v`;
-
 
 export const codeCommand = readable(command);
 export const codeParentFile = readable(parentFile);

@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Tailwind CSS */
 @layer base {
     body {
@@ -31,7 +30,7 @@
     .isOnBasicUses {
         @apply border-2 border-teal-600;
     }
-    .isOnOptionals{
+    .isOnOptionals {
         @apply border-2 border-teal-600;
     }
     .isOnIssues {
@@ -40,10 +39,9 @@
     .isOnIntegrations {
         @apply border-2 border-teal-600;
     }
-    .isOnCons{
+    .isOnCons {
         @apply border-2 border-teal-600;
     }
 }
-
 
 /* Custom CSS */
