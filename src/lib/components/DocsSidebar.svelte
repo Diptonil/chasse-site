@@ -1,5 +1,6 @@
 <script>
     import { CircleInfoSolid, PenToSquareSolid, HandHoldingHandSolid, BugSolid, ExclamationSolid } from 'svelte-awesome-icons';
+    import { issueCount } from '$lib/stores.js';
 
     export let section = '#terminology';
     let isOnTerminology = false;
@@ -48,7 +49,7 @@
             <a id="issues" class:isOnIssues href="/documentation/issues" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <BugSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
             <span class="flex-1 ml-3 whitespace-nowrap">Issues & Bugs</span>
-            <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-semibold text-slate-950 bg-teal-800 rounded-full">7</span>
+            <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-semibold text-slate-950 bg-teal-800 rounded-full">{ $issueCount }</span>
             </a>
         </li>
         <li>

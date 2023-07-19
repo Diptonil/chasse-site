@@ -110,7 +110,7 @@ const balletChild = `<text!!>
             ...
         </div>
         ...
-        
+
         <Footer!! />
 
         <Scripts!! />
@@ -190,6 +190,8 @@ const docsCommandVerboseFlag = `chasse ballet.chasse.html . -l`;
 
 const docsCommandOutputPath = `chasse ballet.chasse.html relative/path/to/directory`;
 
+const issues = 8;
+
 
 export const codeCommand = readable(command);
 export const codeParentFile = readable(parentFile);
@@ -205,3 +207,4 @@ export const codeDocsCommandParentFlag = readable(docsCommandParentFlag);
 export const codeDocsCommandVerboseFlag = readable(docsCommandVerboseFlag);
 export const codeDocsCommandOutputPath = readable(docsCommandOutputPath);
 export const codeDocsResult = readable(docsResult);
+export const issueCount = readable(issues);

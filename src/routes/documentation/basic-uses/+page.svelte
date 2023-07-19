@@ -23,7 +23,7 @@
                     <b class="font-medium text-4xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Basic Uses</b>
                     <p class="pt-8">This section would demonstrate an example with respect to the use of Chasse, as well as all rules to keep in mind.</p>
                     <p class="pt-2 pb-8">
-                        First we see the reference, then we move on to the rules.
+                        First we see the reference, then we move on to the rules and then discuss the command flags and outputs.
                     </p>
                     <b class="font-medium text-3xl bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">Inheriting from Multiple Parents</b>
                     <ul class="list-disc py-8 space-y-8 mx-auto w-[90%] text-lg">
@@ -51,6 +51,8 @@
                     <ul class="list-disc py-8 space-y-8 mx-auto w-[90%] text-lg">
                         <li>It is <i>mandatory</i> for the Chasse files to have <code>.chasse.html</code> extension, otherwise it won't work.</li>
                         <li>Components must be named in <code>PascalCase</code>.</li>
+                        <li>Parent file names should be all <code>lowercase</code>, followed by the extension.</li>
+                        <li>The parent declarations should <i>mandatorily</i> have the <code>lowercase</code> parent file name.</li>
                         <li>It is <i>mandatory</i> to have two exclamation points right after the component name (no whitespace expected) in  <br />a component definition.</li>
                         <li>A component definition ends with <code>/Component!!</code> and not <code>/ Component!!</code> (with the brackets).</li>
                         <li>The parents files must be defined starting from the very first line, without any line breaks in between. This is a <br />feature limitation in the current version which would soon be addressed.</li>
