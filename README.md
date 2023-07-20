@@ -55,10 +55,10 @@ There are subsequent changes to be made to the project to reach the final stage.
 -   [ ] Download of MacOS binary.
 -   [x] Convention List.
 -   [x] Involvement Engagement.
--   [ ] Integration with Tailwind CSS.
--   [ ] Integration with Bulma CSS.
+-   [x] Integration with Tailwind CSS.
+-   [x] Integration with Bulma CSS.
 -   [ ] Integration with Foundation CSS.
--   [ ] Integration with Bootstrap.
--   [ ] Integration with UIKit.
--   [ ] Integration with Sass.
--   [ ] Integration with Less.
+-   [x] Integration with Bootstrap.
+-   [x] Integration with UIKit.
+-   [x] Integration with Sass.
+-   [x] Integration with Less.
