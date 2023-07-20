@@ -1,11 +1,12 @@
 <script>
     import { WindowsBrand, LinuxBrand } from 'svelte-awesome-icons';
     import { CodeBlock } from '@skeletonlabs/skeleton';
-    import { codeWindowsPathCommand, codeLinuxPathCommand, codeInstallationCheck } from '$lib/stores.js'
+    import { codeWindowsPathCommand, codeLinuxPathCommand, codeInstallationCheck } from '$lib/stores.js';
 
     import Head from '$lib/components/Head.svelte';
     import Navbar from '$lib/components/Navbar.svelte';
     import Footer from '$lib/components/Footer.svelte';
+
 </script>
 
 
@@ -25,11 +26,11 @@
             <div id="downloads" class=" text-teal-600 flex items-center justify-center gap-96 w-[92%] mx-auto pt-16">
                 <div>
                     <WindowsBrand class="pb-4 pl-4 w-32 h-32" />
-                    <a href="/src/lib/binaries/linux/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Windows</button></a>
+                    <a href="/binaries/win/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Windows</button></a>
                 </div>
                 <div>
                     <LinuxBrand class="pb-4 w-32 h-32" />
-                    <a href="/src/lib/binaries/linux/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Linux</button></a>
+                    <a href="/binaries/linux/chasse.zip" download="chassev1.0.0"><button class="bg-teal-600 text-slate-950 px-5 py-2 rounded-md hover:bg-teal-500 shadow-sm hover:shadow-teal-600 my-4">Get for Linux</button></a>
                 </div>
             </div>
             <hr />

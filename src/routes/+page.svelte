@@ -18,7 +18,7 @@
         <main>
             <div id="hero-header" class="flex flex-col justify-center items-center text-6xl pt-8 pr-4">
                 <p class="bg-gradient-to-r from-emerald-600 to-teal-900 bg-clip-text text-transparent">The Simplicity of HTML.</p>
-                <p class="bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Without the Boilerplate.</p>
+                <p class="bg-gradient-to-r from-teal-900 to-emerald-600 bg-clip-text text-transparent">Without the Boilerplate!!</p>
             </div>
             <div id="hero-subheader" class="text-teal-600 flex flex-col justify-center items-center text-lg pt-8 pr-4">
                 <p>Define your components in HTML. Reuse them wherever you want to.</p>
